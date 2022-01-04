@@ -1,47 +1,28 @@
 n<-c(scan())
-l<-length(n)
-p<-1
+sum=0
 for(i in n)
 {
-p=p*i
+  sum=sum+1/i
 }
-gm=p^(1/l)
-gm
+hm=l/sum
+hm
 
 
 OUTPUT:
 > n<-c(scan())
-1: 5
+1: 1
 2: 6
-3: 7
-4: 8
-5: 9
-6: 
-Read 5 items
-> l<-length(n)
-> p<-1
-> for(i in n)
-+ {
-+   p=p*i
-+ }
-> gm=p^(1/l)
-> gm
-[1] 6.853468
-> n<-c(scan())
-1: 9
-2: 5
-3: 1
-4: 6
+3: 3
+4: 9
 5: 4
 6: 
 Read 5 items
-> l<-length(n)
-> p<-1
+> sum=0
 > for(i in n)
 + {
-+   p=p*i
++   sum=sum+1/i
 + }
-> gm=p^(1/l)
-> gm
-[1] 4.042823
+> hm=l/sum
+> hm
+[1] 2.686567
 > 
